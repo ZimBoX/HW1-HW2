@@ -1,5 +1,5 @@
 
-import "./Button.css"
+import "./Button.css";
 
 function Button(props){
     
@@ -12,15 +12,21 @@ function Button(props){
     // !it is worth using only a couple of state request or href!
     
     return(
-        <div className="buttonWrapper">
+        <div>
             { href
-            ?   <button type={ type } className="hrefButton" >
-                    <a href={ href }>{ text }</a>
-                </button>
-            :   <button type={ type } className="stateButton" onClick={ () => { state(request) } }>
-                    <p>{ text }</p>
-                </button>
+            ?   <div className="hrefButtonWrapper">
+                    <button type={ type } className="hrefButton" >
+                        <a href={ href }>{ text }</a>
+                    </button>
+                </div>
+            :   <div className="stateButtonWrapper">
+                    <button type={ type } className="stateButton" onClick={ () => { state(request) } }>
+                        <p>{ text }</p>
+                    </button>
+                </div>
             }
         </div>
     )
 }
+
+export default Button;

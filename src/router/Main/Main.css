@@ -1,0 +1,5 @@
+.stateButtonWrapper{
+    position: absolute;
+    top: calc(50vh - 50px);
+    left: calc(50vw - 150px);
+}
