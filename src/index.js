@@ -6,13 +6,14 @@ import {
 } from "react-router-dom";
 
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import Main from './router/Main/Main';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Main />,
   },
 ]);
 
