@@ -15,8 +15,8 @@ function Button(props){
         <div>
             { href
             ?   <div className="hrefButtonWrapper">
-                    <button type={ type } className="hrefButton" >
-                        <a href={ href }>{ text }</a>
+                    <button type={ type } className="hrefButton" onClick={ () => { window.location.href = href } }>
+                        <p>{ text }</p>
                     </button>
                 </div>
             :   <div className="stateButtonWrapper">

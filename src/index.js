@@ -15,6 +15,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Main />,
   },
+  {
+    path: "/HW1",
+    element: <Main />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
