@@ -1,0 +1,59 @@
+.inputEror{
+    border-color: red;
+}
+
+.concatenationForm{
+    display: flex;
+    justify-content: center;
+}
+.concatenationForm form{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 25px;
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.55);
+    width: 100%;
+}
+.concatenationForm form button{
+    width: 200px;
+    height: 50px;
+}
+.concatenationForm form button p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.concatenationForm form input{
+    background-color: #454545;
+    border-radius: 8px;
+    margin: 0 10px;
+    height: 50px;
+    width: 200px;
+    border: 2px solid #6837EE;
+    outline: none;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.concatenationForm form .inputEror{
+    border-color: red;
+}
+
+.concatenationResult{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 25px;
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.55);
+}
+
+.concatenationResult h2{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+}

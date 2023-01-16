@@ -16,12 +16,14 @@ function Main() {
 
     return (
         <div className="Main">
-            <Button 
-                type = "Button"
-                text = "Задания"
-                state = { sePlayAnim }
-                request = { true }
-            />
+            <div className='MainButton'>
+                <Button 
+                    type = "Button"
+                    text = "Задания"
+                    state = { sePlayAnim }
+                    request = { true }
+                />
+            </div>
             {
                 playAnim
                 ? <NavButtons 

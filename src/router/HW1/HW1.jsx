@@ -1,27 +1,17 @@
-import { useState, useEffect } from 'react';
-
-import axios from "axios";
 
 import "./HW1.css";
 
+import Concatenation from '../../Components/Concatenation/Concatenation';
+
 function HW1() {
 
-    const [axiosURL, setAxiosURL] = useState([]);
-
-    useEffect( () => {
-        if (axiosURL.length === 0){
-            axios.get('php/functions.php')
-            .then(function (response) {
-                setAxiosURL(response.request.responseURL);
-                return;
-            })
-            .catch(function () {
-                setAxiosURL("http://hw1.box/functions.php");
-                return;
-            });
-        }
-    }, [] )
-
+    return(
+        <div className="HW2Wrapper">
+            <h2>1)</h2>
+            <Concatenation />
+            <h2>2)</h2>
+        </div>
+    )
 }
 
 export default HW1;
