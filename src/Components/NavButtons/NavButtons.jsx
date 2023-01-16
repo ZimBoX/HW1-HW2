@@ -16,7 +16,6 @@ function NavButtons(props){
             buttons.map(f => {
 
                 const [text, href, type] = f;
-                console.log(text)
                 return (
                     <Button 
                         text = { text }

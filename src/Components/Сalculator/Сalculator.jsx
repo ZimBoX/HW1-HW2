@@ -17,7 +17,6 @@ function Сalculator(){
         if (axiosURL.length === 0){
             axios.post('php/Сalculator.php')
             .then(function (response) {
-                console.log(response)
                 setAxiosURL(response.request.responseURL);
                 return;
             })
@@ -48,7 +47,7 @@ function Сalculator(){
             { (!result)
                 ?   <div className='СalculatorForm'>
                         <form name='ExpressionAge' onSubmit={ (event) => { event.preventDefault(); send() } }>
-                            <input type="text" ref={ Expression } placeholder="Ваше имя"/>
+                            <input type="text" ref={ Expression } placeholder="Введите выражение"/>
                             <div className='СalculatorButton'>
                                 <Button 
                                     text="Посчитать"

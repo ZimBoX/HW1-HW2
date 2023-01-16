@@ -18,7 +18,6 @@ function Concatenation(){
         if (axiosURL.length === 0){
             axios.post('php/Concatenation.php')
             .then(function (response) {
-                console.log(response)
                 setAxiosURL(response.request.responseURL);
                 return;
             })
