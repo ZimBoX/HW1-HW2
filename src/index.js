@@ -9,6 +9,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import Main from './router/Main/Main';
+import HW1 from './router/HW1/HW1';
 
 const router = createBrowserRouter([
   {
@@ -17,14 +18,17 @@ const router = createBrowserRouter([
   },
   {
     path: "/HW1",
-    element: <Main />,
+    element: <HW1 />,
   },
+  {
+    path: "/test",
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );
 
