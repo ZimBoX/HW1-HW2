@@ -1,8 +1,8 @@
-.concatenationForm{
+.СalculatorForm{
     display: flex;
     justify-content: center;
 }
-.concatenationForm form{
+.СalculatorForm form{
     display: flex;
     justify-content: center;
     margin: 50px;
@@ -10,16 +10,16 @@
     box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.55);
     width: 100%;
 }
-.concatenationForm form button{
+.СalculatorForm form button{
     width: 200px;
     height: 50px;
 }
-.concatenationForm form button p{
+.СalculatorForm form button p{
     font-size: 18px;
     margin: 0;
 }
 
-.concatenationForm form input{
+.СalculatorForm form input{
     background-color: #454545;
     border-radius: 8px;
     margin: 0 10px;
@@ -35,11 +35,11 @@
     padding: 5px;
 }
 
-.concatenationForm form .inputEror{
+.СalculatorForm form .inputEror{
     border-color: red;
 }
 
-.concatenationResult{
+.СalculatorResult{
     display: flex;
     justify-content: center;
     margin: 50px;
@@ -47,7 +47,7 @@
     box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.55);
 }
 
-.concatenationResult h2{
+.СalculatorResult h2{
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
