@@ -62,7 +62,7 @@ function Concatenation(){
                 ?   <div className='concatenationForm'>
                         <form name='NameAge' onSubmit={ (event) => { event.preventDefault(); send() } }>
                             <input type="text" ref={ Name } placeholder="Ваше имя"/>
-                            <input type="text" ref={ Age } placeholder="Ваш возрвст"/>
+                            <input type="text" ref={ Age } placeholder="Ваш возраст"/>
                             <div className='concatenationButton'>
                                 <Button 
                                     text="Отправить"

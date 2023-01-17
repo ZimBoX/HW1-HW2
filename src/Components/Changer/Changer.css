@@ -1,0 +1,55 @@
+.ChangerForm{
+    display: flex;
+    justify-content: center;
+}
+.ChangerForm form{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 25px;
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.55);
+    width: 100%;
+}
+.ChangerForm form button{
+    width: 60px;
+    height: 60px;
+}
+.ChangerForm form button img{
+    width: 50px;
+    height: 50px;
+}
+
+.ChangerForm form input{
+    background-color: #454545;
+    border-radius: 8px;
+    margin: 0 10px;
+    height: 60px;
+    width: 60px;
+    border: 2px solid #6837EE;
+    outline: none;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.ChangerForm form .inputEror{
+    border-color: red;
+}
+
+.ChangerResult{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 25px;
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.55);
+}
+
+.ChangerResult h2{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+}

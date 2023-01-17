@@ -7,28 +7,38 @@ header('Access-Control-Allow-Credentials: true');
 
 $input = json_decode(file_get_contents('php://input'), true);
 
-if ($input){
+if ($input) {
 
-    // Код взят со stackoverflow.
-
-if(preg_match('/(\d+)(?:\s*)([\+\-\*\/])(?:\s*)(\d+)/', $input["Expression"], $matches) !== FALSE){
+    function math($matches)
+    {
     $operator = $matches[2];
 
-    switch($operator){
-        case '+':
-            $Result = $matches[1] + $matches[3];
-            break;
-        case '-':
-            $Result = $matches[1] - $matches[3];
-            break;
-        case '*':
-            $Result = $matches[1] * $matches[3];
-            break;
-        case '/':
-            $Result = $matches[1] / $matches[3];
-            break;
+        switch ($operator) {
+            case '+':
+                return $Result = $matches[1] + $matches[3];
+            case '-':
+                return $Result = $matches[1] - $matches[3];
+            case '*':
+                return $Result = $matches[1] * $matches[3];
+            case '/':
+                return $Result = $matches[1] / $matches[3];
+        }
     }
-}
-    echo "Ответ: " . $Result;
+    $test = $input["Expression"];
+    do {
+        $test = preg_replace_callback(
+            '/(\d+)(?:\s*)([\*\/])(?:\s*)(\d+)/',
+            "math",
+            $test
+        );
+    } while (preg_match('/(\d+)(?:\s*)([\*\/])(?:\s*)(\d+)/', $test, $matches) !== 0);
+    do {
+        $test = preg_replace_callback(
+            '/(\d+)(?:\s*)([\+\-])(?:\s*)(\d+)/',
+            "math",
+            $test
+        );
+    } while (preg_match('/(\d+)(?:\s*)([\+\-])(?:\s*)(\d+)/', $test, $matches) !== 0);
+    echo "Ответ: " . $test;
 }
 ?>
