@@ -26,7 +26,8 @@ function Concatenation(){
                 return;
             });
         }
-    }, [] )
+    }, [axiosURL] )
+
     function send(){
         let userName = Name.current.value;
         let userAge = Age.current.value

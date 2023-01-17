@@ -25,7 +25,8 @@ function Сalculator(){
                 return;
             });
         }
-    }, [] )
+    }, [axiosURL] )
+
     function send(){
         let userExpression = Expression.current.value;
         if (userExpression === ""){

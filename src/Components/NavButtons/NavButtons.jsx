@@ -25,7 +25,7 @@ function NavButtons(props){
                 )
             })
         )
-    }, [] )
+    }, [buttons] )
 
     return(
         <div className="NavWrapper" onClick={ () => { state(request) } }>

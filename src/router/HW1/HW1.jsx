@@ -12,6 +12,7 @@ function HW1() {
             <Concatenation />
             <h2>2)</h2>
             <Сalculator />
+            <h2>3)</h2>
         </div>
     )
 }
