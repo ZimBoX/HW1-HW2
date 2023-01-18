@@ -52,7 +52,7 @@ function Test() {
       document.getElementById("3").checked = false;
       document.getElementById("4").checked = false;
     }
-
+    
     axios
       .post(axiosURL, {
         Number: questNumber,
@@ -63,6 +63,7 @@ function Test() {
 
         mode = response.data.mode;
         getAnswer = response.data.answers;
+        useAnswer.current = [0, 0, 0, 0];
 
         getHTML(mode, getAnswer);
 
@@ -72,7 +73,11 @@ function Test() {
 
   function getHTML(mode, getAnswer) {
     if (mode === "deployed") {
-      setAnswerMode(<textarea name="" id="" cols="30" rows="10"></textarea>);
+      setAnswerMode(
+        <div className="TestInputs">
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      );
     } else if (mode === "more") {
       let id = 0;
 
@@ -81,7 +86,7 @@ function Test() {
           id++;
 
           return (
-            <div>
+            <div className="TestInputs">
               <input
                 type="checkbox"
                 name="more"
@@ -103,7 +108,7 @@ function Test() {
           id++;
 
           return (
-            <div>
+            <div className="TestInputs">
               <input
                 type="radio"
                 name="one"
@@ -118,7 +123,7 @@ function Test() {
         })
       );
     } else {
-      setAnswerMode( <div></div> );
+      setAnswerMode(<div></div>);
     }
   }
 
@@ -136,19 +141,31 @@ function Test() {
     <div className="TestWrapper">
       <div className="TestForm">
         <form
-          name="VarAVarB"
+          name="Test"
           onSubmit={(event) => {
             event.preventDefault();
             send();
           }}
         >
           {"rightAnswers" in question ? (
-            <h2>Поздравляю, правильных ответов: {question.rightAnswers}</h2>
+            <div className="TestResult">
+              <h2>
+                Поздравляю, правильных ответов: {question.rightAnswers} из 2!
+              </h2>
+            </div>
           ) : (
-            <h2>{question.text}</h2>
+            <div className="TestResult">
+              <h2>{question.text}</h2>
+            </div>
           )}
           {answerMode}
-          <Button text="Далее" type="submit" state={() => {}} />
+          {"rightAnswers" in question ? (
+            <div>
+              <div></div>
+            </div>
+          ) : (
+            <Button text="Далее" type="submit" state={() => {}} />
+          )}
         </form>
       </div>
     </div>

@@ -1,0 +1,59 @@
+.TestForm{
+    display: flex;
+    justify-content: center;
+}
+.TestForm form{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 50px;
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.55);
+    width: 100%;
+}
+.TestForm form button{
+    width: 200px;
+    height: 50px;
+}
+.TestForm form button p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.TestForm form div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.TestForm form .TestInputs input{
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin-right: 10px;
+}
+.TestForm form .TestInputs label{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+}
+.TestForm form .TestInputs textarea{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    width: 100%;
+}
+
+.TestForm form .inputEror{
+    border-color: red;
+}
+
+.TestResult h2{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    margin: 0;
+}

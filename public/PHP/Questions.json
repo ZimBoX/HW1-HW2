@@ -1,25 +1,28 @@
 {
     "quest_1":{
         "id" : "1",
-        "text" : "Вопрос 1",
-        "answers" :["Первый", "Второй", "Третий" , "Четвёртый"],
+        "text" : "Как расшифровывается аббревиатура RSPA?",
+        "answers" :["React Single Page Application",
+                    "Research and Special Programs Administration", 
+                    "Really Simple PHP and Ajax" , 
+                    "Remote Smart Parking Assist"],
         "mode" : "one"
     },
     "quest_2":{
         "id" : "2",
-        "text" : "Вопрос 2",
-        "answers" :["Первый", "Второй", "Третий", "Четвёртый"],
+        "text" : "Ответ на главный вопрос жизни, вселенной и всего такого?",
+        "answers" :["Нет", "Два", "Нет", "Сорок"],
         "mode" : "more"
     },
     "quest_3":{
         "id" : "3",
-        "text" : "Вопрос 3",
+        "text" : "Опишите ваше мнение о нашем тесте.",
         "answers" :[],
         "mode" : "deployed"
     },
     "rightAnswers":{
         "quest_1":[1,0,0,0],
-        "quest_2":[1,0,1,0],
+        "quest_2":[0,1,0,1],
         "quest_3":[]
     }
 }
