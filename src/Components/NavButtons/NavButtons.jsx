@@ -9,7 +9,7 @@ function NavButtons(props){
     const {buttons, state, request} = props;
     // buttons - array contraining arrays form: [text, href, type]
 
-    const [render, setRender] = useState();
+    const [render, setRender] = useState(null);
 
     useEffect( () => {
         setRender(

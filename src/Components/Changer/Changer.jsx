@@ -4,8 +4,6 @@ import axios from "axios";
 
 import "./Changer.css";
 
-import Button from '../Button/Button';
-
 function Changer(){
     
     const [axiosURL, setAxiosURL] = useState([]);

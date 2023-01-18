@@ -47,7 +47,7 @@ function Сalculator(){
         <div className='СalculatorWrapper'>
             { (!result)
                 ?   <div className='СalculatorForm'>
-                        <form name='ExpressionAge' onSubmit={ (event) => { event.preventDefault(); send() } }>
+                        <form name='Expression' onSubmit={ (event) => { event.preventDefault(); send() } }>
                             <input type="text" ref={ Expression } placeholder="Введите выражение"/>
                             <div className='СalculatorButton'>
                                 <Button 
