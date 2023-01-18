@@ -5,6 +5,7 @@ import Concatenation from '../../Components/Concatenation/Concatenation';
 import Сalculator from "../../Components/Сalculator/Сalculator";
 import Changer from "../../Components/Changer/Changer";
 import Test from "../../Components/Test/Test";
+import CreateBlock from "../../Components/CreateBlock/CreateBlock";
 
 function HW1() {
 
@@ -19,6 +20,7 @@ function HW1() {
             <h2>4)</h2>
             <Test />
             <h2>5)</h2>
+            <CreateBlock />
         </div>
     )
 }

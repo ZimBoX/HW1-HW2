@@ -1,0 +1,55 @@
+.CreateBlockForm{
+    display: flex;
+    justify-content: center;
+}
+.CreateBlockForm form{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 25px;
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.55);
+    width: 100%;
+}
+.CreateBlockForm form button{
+    width: 200px;
+    height: 50px;
+}
+.CreateBlockForm form button p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.CreateBlockForm form input{
+    background-color: #454545;
+    border-radius: 8px;
+    margin: 0 10px;
+    height: 50px;
+    width: 200px;
+    border: 2px solid #6837EE;
+    outline: none;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.CreateBlockForm form .inputEror{
+    border-color: red;
+}
+
+.CreateBlockResult{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 25px;
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.55);
+}
+
+.CreateBlockResult h2{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+}
