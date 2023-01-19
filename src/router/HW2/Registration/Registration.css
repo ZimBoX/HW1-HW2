@@ -1,0 +1,63 @@
+
+.Registration h3{
+    color: rgb(209, 59, 21);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.Registration h2{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.Registration a{
+    color: rgb(173, 215, 252);
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.Registration form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.55);
+    width: 100%;
+}
+
+.Registration form button{
+    width: 200px;
+    height: 50px;
+    margin: 15px 0;
+}
+.Registration form button p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.Registration form input{
+    background-color: #454545;
+    border-radius: 8px;
+    margin: 15px 0;
+    height: 50px;
+    width: 200px;
+    border: 2px solid #6837EE;
+    outline: none;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.Registration form .inputEror{
+    border-color: red;
+}

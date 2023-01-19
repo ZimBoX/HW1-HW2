@@ -1,0 +1,29 @@
+.HW2{
+    margin: 50px 100px;
+}
+header{
+    padding: 25px;
+    background-color: #2B2B2B;
+    box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.1), 0px 4px 6px -2px rgba(16, 24, 40, 0.05);
+}
+
+header nav{
+    display: flex;
+}
+
+header nav div{
+    background-color: #454545;
+    margin-right: 20px;
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.55);
+    border-radius: 8px;
+}
+
+header nav div a, header nav div span{
+    display: block;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    color: aliceblue;
+    text-decoration: none;
+}

@@ -7,7 +7,7 @@ import NavButtons from '../../Components/NavButtons/NavButtons';
 
 const nav = [
     ["Задание 1", "HW1", "Button"],
-    ["Задание 2", "HW2", "Button"]
+    ["Задание 2", "HW2/HomePage", "Button"]
 ]
 
 function Main() {
