@@ -1,3 +1,9 @@
+# Режим разработки React + local server
+
+Для работы всех php скриптов, в режиме разработки React,
+необходимо дополнительно поднять сервер в папке hw1-hw2/public/php
+Обязательно! домен: hw1.box
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
